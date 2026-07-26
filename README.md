@@ -11,3 +11,4 @@ npx skills add --global Silvenga/agent-skills
 ## Skills
 
 - `copilot`: For high touch or complex workflows, assuming Human-in-the-loop. Built upon aviation concepts to prevent the two extremes - a Yes-Man (Sycophancy) and runaway autonomous actions. Why use an LLM if it's just going to be a glorified natural language engine?
+- `conventions-writing`: A documentation writing style for AI agents - impersonal, ASCII-only, markdown-native prose with explicit punctuation, structure, and formatting rules. Matches my personal style condensed into a skill.
