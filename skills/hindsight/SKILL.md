@@ -34,9 +34,11 @@ Set these fields on every `sync_retain` call:
 
 Tags filter which memories `recall` and `reflect` return. Pass `tags` with a filter to scope results - omit `tags` to search all memories.
 
-Always include a repo tag on every retain (when executing within a git repo): `repo:<git repo folder name>` (e.g., `repo:agent-skills`, `repo:payments-service`). Determine the repo folder name from the working directory at the start of a session and reuse it on every retain.
+Allowed tag tags:
 
-When recalling, decide whether the query is specific to the current repo or general. Pass `tags=["repo:<name>"]` to filter to the current repo. Omit `tags` to search across all repos.
+- `repo:<git repo name>`: The repo name of the current git repo (or the base git repo name if in a working tree). Use a command like `basename "$(dirname "$(cd "$(git rev-parse --git-common-dir)" && pwd)")"` to determine the repo folder name at the start of a session and reuse this tag on every retain. Note that when working within a working tree, the base repo name should be used. When recalling, decide whether the query is specific to the current repo or general. Pass `tags=["repo:<name>"]` to filter to the current repo. Omit `tags` to search across all repos.
+
+The `repo:` tag is always required when using `sync_retain`, unless you cannot detect a git repo.
 
 ## When to Recall
 
