@@ -14,6 +14,7 @@ npx skills add --global Silvenga/agent-skills
 - `conventions-writing`: A documentation writing style for AI agents - impersonal, ASCII-only, markdown-native prose with explicit punctuation, structure, and formatting rules. Matches my personal style condensed into a skill.
 - `conventions-code-rust`: Style and structure conventions for Rust modules, visibility, errors, and tests.
 - `conventions-frontend`: Opinionated style conventions for frontend projects (TypeScript, TailwindCSS, Vite, Vitest, Oxlint/Oxfmt).
+- `conventions-skills`: Best practices for agents writing skills.
 - `hindsight`: A personal skill for Hindsight (Agent Memory), optimized for MCP use (hardness portable).
 
 ## Agents
